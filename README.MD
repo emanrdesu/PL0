@@ -1,3 +1,5 @@
+Compiler and VM for programming language PL0 implemented with custom instruction set architecture.
+
 prints everything to stdout
 compile with "gcc compiler.c"
 usage: ./a.out [-l] [-a] [-v] prog (in any order)
