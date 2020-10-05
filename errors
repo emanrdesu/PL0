@@ -1,0 +1,33 @@
+2 "= must be followed by a number." const i = j; . 
+3 "Identifier must be followed by =." const i := j; .
+4 "const, var, read, and write must be followed by identifier." const 4 = 3; .
+5 "Semicolon or comma missing." const i = 2 j = 5; .
+7 "Statement expected." var i,j; begin i := 7 j := 2 end .
+9 "Period expected." var x,y;
+11 "Undeclared identifier." i := 1 .
+12 "Assignment to constant is not allowed." const i = 2; i := 1 .
+13 "Assignment operator expected." var i; i = 1 + 2 .
+16 "then expected after an if." if 1 < 2 .
+17 "Semicolon or end expected." begin .
+18 "do expected after a while." while .
+20 "Relational operator expected." if 1 then .
+22 "Unbalanced parentheses." var i; i := ((1 + 2) .
+25 "Number is too long." const i = 12983721987321973213; .
+26 "Identifier is to long" const ayylmaobottomtext = 9; .
+27 "Identifier first character is not alphabetic." const :1 = 9; .
+28 "Identifier is not alphanumeric" const j:cole = 9; .
+29 "Const declarations must occur before var declarations or statements." var j; const j = 9; .
+30 "Var declarations must occur before statements." begin if 1 < 3 then end var j; .
+31 "Const declaration has less than 5 tokens (Minimum is 5)." const i; .
+32 "Var declaration has less than 3 tokens (Minimum is 3)." var; .
+33 "Statement not in form \"ident := expr\"" var i; i .
+35 "Malformed read/write statement. Must be \"(read|write) ident\"." read 1 .
+36 "During expression form, term was expected but not found." var i; i := (1*) + 2 .
+37 "During termp form, factor was expected but not found." var i; i := (*) + 2 .
+38 "Symbol already exists." const i = 2 ; var i; .
+40 "Too much code." var i; i := 1 + 1 + 1 ... + 1 (999999999 times) .
+41 "Condition expected but not found." if 1 then .
+42 "Wrong symbol kind." var x; call x.
+44 "Procedure expected." procedure foo .
+45 "Block expected." procedure foo .
+46 "Procedure declarations must occur before statemtements" write 1 procedure foo ;;.

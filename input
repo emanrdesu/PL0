@@ -1,0 +1,34 @@
+
+/* fibonacci recursive */
+/* prints first i fib numbers */
+const i = 5;
+var t, n, r;
+procedure fib;
+   var t, ans;
+   begin
+     if n < 2
+       then ans := n
+       else begin
+               t := n;
+	       n := n-1;
+	       call fib;
+	       ans := r;
+	       n := t;
+	       n := n - 2;
+	       call fib;
+	       ans := ans + r
+            end;
+     r := ans
+   end;
+
+begin
+   n := 0;
+   while n <= i
+   do begin
+         t := n;
+         call fib;
+	 n := t;
+	 n := n+1;
+	 write r
+      end
+end.
